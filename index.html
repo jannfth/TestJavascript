@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Javascript</title>
+
+    <script>
+        function myFunction() {
+            document.getElementById("demo").innerHTML = "Paragraph Diubah.";
+
+            setTimeout(function() {
+                document.getElementById("demo").innerHTML = "Test";
+            }, 3000);
+        }
+    </script>
+
+</head>
+<body>
+
+    <h1>Demo JavaScript untuk Head</h1>
+
+    <p id="demo">T</p>
+
+    <button type="button" onclick="myFunction()">Test Disini</button>
+
+<h2>Tes JavaScript</h2>
+
+<button type="button" onclick="tampilkanTanggal()">
+    Klik saya untuk menampilkan tanggal dan waktu saat ini.
+</button>
+
+<p id="demo"></p>
+
+<script>
+function tampilkanTanggal() {
+    let demo = document.getElementById('demo');
+
+    if (demo.innerHTML === "") {
+        demo.innerHTML = Date();
+    } else {
+        demo.innerHTML = "";
+    }
+}
+</script>
+
+</body>
+</html>
