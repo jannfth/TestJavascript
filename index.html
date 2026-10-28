@@ -1,48 +1,48 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Javascript</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
 
-    <script>
-        function myFunction() {
-            document.getElementById("demo").innerHTML = "Paragraph Diubah.";
+        <script>
+            function myFunction() {
+                document.getElementById("demo").innerHTML = "Paragraph Diubah.";
 
-            setTimeout(function() {
-                document.getElementById("demo").innerHTML = "Test";
-            }, 3000);
-        }
-    </script>
+                setTimeout(function() {
+                    document.getElementById("demo").innerHTML = "Test";
+                }, 3000);
+            }
+        </script>
 
-</head>
-<body>
+    </head>
+    <body>
 
     <h1>Demo JavaScript untuk Head</h1>
 
-    <p id="demo">T</p>
+        <p id="demo">Sample</p>
 
-    <button type="button" onclick="myFunction()">Test Disini</button>
+        <button type="button" onclick="myFunction()">Test Disini</button>
 
-<h2>Tes JavaScript</h2>
+    <h2>Tes</h2>
 
-<button type="button" onclick="tampilkanTanggal()">
-    Klik saya untuk menampilkan tanggal dan waktu saat ini.
-</button>
+    <p id="tanggal">Waktu</p>
 
-<p id="demo"></p>
+    <button type="button" onclick="tampilkanTanggal()">
+        Klik saya untuk menampilkan tanggal dan waktu saat ini.
+    </button>
 
-<script>
-function tampilkanTanggal() {
-    let demo = document.getElementById('demo');
+    <script>
+    function tampilkanTanggal() {
+        let tanggal = document.getElementById('tanggal');
 
-    if (demo.innerHTML === "") {
-        demo.innerHTML = Date();
-    } else {
-        demo.innerHTML = "";
+        if (tanggal.innerHTML === "Waktu") {
+            tanggal.innerHTML = Date();
+        } else {
+            tanggal.innerHTML = "Waktu";
+        }
     }
-}
-</script>
+    </script>
 
-</body>
-</html>
+    </body>
+    </html>
